@@ -1,0 +1,25 @@
+<script>
+
+function calculator (operator, firstNumber, secondNumber){
+
+  if(operator === "add" ){
+    alert(Number(firstNumber) + Number(secondNumber));
+}
+else if(operator === "subtract"){
+    alert(Number(firstNumber) - Number(secondNumber));
+}
+else if(operator === "divide"){
+    alert(Number(firstNumber) / Number(secondNumber));
+}
+else if(operator === "multiply"){
+    alert(Number(firstNumber) * Number(secondNumber));
+}
+else{
+    alert("does not recognise this")
+}
+}
+var operator = prompt("enter an operator either add, subtract, divide or multiply");
+var firstNumber = prompt("enter first number");
+var secondNumber = prompt("enter second number");
+calculator(operator, firstNumber, secondNumber)
+</script>
